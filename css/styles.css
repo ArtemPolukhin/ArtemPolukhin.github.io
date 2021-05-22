@@ -458,7 +458,7 @@ footer {
   }
 
   .vehicles {
-    justify-content: center;
+    justify-content: space-evenly;
   } 
 } /* end of media 769px */
 
@@ -467,5 +467,13 @@ footer {
     text-align:left;
   }
   
+}
+
+@media (min-width: 838px) and (max-width: 1178px) {
+
+  .vehicles {
+    justify-content: space-evenly;
+  }
+
 }
 
