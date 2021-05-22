@@ -1,0 +1,471 @@
+
+:root {
+  --bg-orange: #FFCC8F;
+  --bg-grey: #535353;
+  --container-size: 1400px;
+  --container-padding: 0 15px 0 15px;
+  
+}
+
+/* * {
+  border: 1px dotted black;
+} */
+
+
+/** NAVIGATION BAR */
+
+nav {
+  background: var(--bg-orange);
+  font-family: Comfortaa;
+}
+
+nav img {
+  display: block;
+}
+
+.navbar-wrapper {
+  
+  max-width: var(--container-size);
+  margin: auto;
+  padding: var(--container-padding);
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+
+}
+
+.navbar-contacts {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0.5rem;
+  flex: 1 1 auto;
+  flex-wrap: wrap;
+  gap: .1rem;
+}
+
+/* for testing alinging of navbar elements */
+/* .navbar-wrapper div {
+  border: 1px solid black;
+} */
+
+.logo-image {
+  max-height: 6rem;
+
+}
+
+.company-name-title {
+  font-size: 3rem;
+  font-weight: 900;
+  flex: 1 0 100%;
+  text-align: left;
+
+}
+
+.navbar-phone,
+.navbar-email,
+.navbar-address {
+  font-size: 1.3rem;
+  font-weight: 600;
+  align-self: left;
+  padding-right: 15px;
+}
+
+.navbar-phone::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f4ad";
+}
+
+.navbar-email:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f0e0";
+}
+
+.navbar-address:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f279";
+}
+
+
+/** LINE OF SERVICES  */
+
+.service-list {
+  background-color: var(--bg-grey);
+  color: white;
+}
+
+.service-list-wrapper {
+  padding: 1rem 15px 1rem 15px;
+  min-height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: nowrap;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+  font-family: Comfortaa;
+  flex: 1 1 auto;
+}
+
+.service-list-items {
+  max-width: 11.5rem;
+}
+
+.service-list-mobile {
+  display: none;
+  padding: .5rem;
+  text-align: center;
+  font-size: 2rem;
+  background-color: var(--bg-grey);
+  color: white;
+  font-family: Comfortaa;
+  font-weight: 700;
+}
+
+
+/** BIG BACKGROUND */
+
+.card-background {
+  
+  background: url(/src/images/free/bg_picture_carousel_truck_bulldozer_2x1.jpg) no-repeat center;
+  background-size: cover;
+  
+  margin: 0 auto;
+  padding: 0.3rem 15px 0.3rem 15px;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  min-height: 35rem;
+  max-width: 100vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.card-bg-item {
+  background: rgba(255, 255, 255, 0.7);
+  border: 3px solid var(--bg-grey);
+  border-radius: 1rem;
+  padding: 0.5rem 15px 0.5rem 15px;
+  max-width: 50rem;
+  font-size: 2rem;
+  font-family: Comfortaa;
+  font-weight: 600;
+  text-align: center;
+}
+
+/** title between sections */
+
+.middle-title {
+  position: relative;
+  margin: 1.5rem auto 0 auto;
+  text-align: center;
+  font-size: 2rem;
+  font-family: Comfortaa;
+  font-weight: 900;
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem; */
+}
+
+.orange-line {
+  width: 65vw;
+  height: 0.3rem;
+  background-color: var(--bg-orange);
+}
+
+.text-title {
+  margin: 0 auto;
+  padding: .3rem 15px .6rem 15px;
+  min-width: max-content;
+}
+
+.black-line {
+  position: absolute;
+  right: 0;
+  width: 65vw;
+  height: 0.3rem;
+  background-color: var(--bg-grey);
+}
+
+/** VEHICLES CARDS */
+
+.vehicles {
+  margin: 1rem auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0 1rem 0 1rem;
+  max-width: var(--container-size);
+}
+
+.card {
+  border: .1rem solid var(--bg-grey);
+  border-radius: 1rem;
+  height: auto;
+  width: 17rem;
+  flex: 0 0 auto;
+}
+
+.card-title {
+  padding: .5rem 15px .5rem 15px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: Comfortaa;
+  font-weight: 700;
+  letter-spacing: .1rem;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-text-item {
+  font-size: 0.9rem;
+  font-family: Roboto;
+  line-height: 1.5rem;
+}
+
+/** DELIVERY CARDS */
+
+.delivery {
+  margin: 1rem auto;
+  padding: 0 1rem 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: var(--container-size);
+  gap: 0.3rem;
+}
+
+.card-colored {
+  border: 0.1rem solid var(--bg-grey);
+  border-radius: 1rem;
+  min-height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex: 1 0 auto;
+
+}
+
+.card-colored-title {
+  padding: 1rem 15px .5rem 15px;
+  text-align: center;
+  font-size: 2rem;
+  font-family: Comfortaa;
+  font-weight: 700;
+  letter-spacing: .1rem;
+  color: white;
+  text-shadow: 0px -3px 6px rgba(0,0,0,0.49);
+  flex: 2.2 0 auto;
+}
+
+.card-colored-text {
+  height: auto;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  font-family: Roboto;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  flex: 0 1 auto;
+}
+
+
+.bg-pic-1 {
+  background-image: url(/src/images/free/sand_desert_3x2.jpg);
+  background-size: cover;
+}
+
+.bg-pic-2 {
+  background-image: url(/src/images/free/stones_small_5x4_small.jpg);
+  background-size: cover;
+}
+
+.bg-pic-3 {
+  background-image: url(/src/images/free/ground_lopata_5x4_small.jpg);
+  background-size: cover;
+}
+
+
+/** FOOTER */
+/* using gap to align contacts
+instead of using justify-content because width is hard to implement */
+footer {
+  padding: 1rem;
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  font-size: 1.2rem;
+  font-family: Roboto;
+  font-weight: 600;
+  flex-wrap: wrap;
+}
+
+.footer-phone::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f87b";
+}
+
+.footer-email::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f0e0";
+}
+
+.footer-address::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f5a0";
+}
+
+/** MEDIA QUERIES */
+
+@media (max-width: 550px) {
+  
+  .logo-image {
+    display: none;
+  }
+
+  .navbar-contacts {
+    padding: 1rem;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  .navbar-contacts
+  .company-name-title {
+    font-size: 1.5rem;
+  }
+
+  .navbar-phone,
+  .navbar-address,
+  .navbar-email {
+    font-size: 1rem;
+    font-family: Roboto;
+    font-weight: 500;
+  }
+
+  /** SERVICES */
+
+  .service-list-mobile {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .service-list-mobile-text {
+    /* 85% for centering text */
+    flex: 0 0 85%;
+    text-align: center;
+  }
+
+  .service-list-wrapper {
+    width: auto;
+    display: none;
+    flex-wrap: wrap;
+  }
+
+  .service-list-items {
+    flex: 1 0 auto;
+    font-family: Roboto;
+    font-weight: 300;
+    max-width: 100%;
+    border-top: 1px solid grey;
+    line-height: 1.4rem;
+  }
+
+  .show-service-list {
+    display: flex;
+  }
+
+
+/** BIG BACKGROUND SECTION */
+
+  .card-background {
+    min-height: 20rem;
+  }
+
+  .card-bg-item {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+/** DIVIDER WITH TITLE TEXT */ 
+
+  .middle-title {
+    font-size: 1.5rem;
+  }
+
+/** VEHICLES CARDS */
+
+  .vehicles {
+    justify-content: center;
+  }
+
+/** DELIVERY CARDS */
+
+  .card-colored {
+    min-height: 12rem;
+    width: 100%;
+  }
+
+  .card-colored-text {
+    flex-direction: column;
+    margin-bottom: 1rem;
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+/** FOOTER */
+
+  footer {
+    background: black;
+    color: white;
+    font-size: 1rem;
+    gap: 0.3rem;
+    font-family: Roboto;
+  }
+
+} /* end of media 550px */
+
+@media (min-width: 550px) and (max-width: 835px) {
+
+  .navbar-contacts {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: .5rem;
+  }
+
+  .company-name-title {
+    font-size: 2rem;
+    flex: 1 0 100%;
+    text-align: left;
+  }
+
+  .service-list-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .vehicles {
+    justify-content: center;
+  } 
+} /* end of media 769px */
+
+@media (max-width: 1921px) {
+  .company-name-title {
+    text-align:left;
+  }
+  
+}
+
